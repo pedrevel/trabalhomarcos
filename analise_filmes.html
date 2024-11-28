@@ -1,0 +1,880 @@
+
+    <html>
+    <head>
+        <title>Análise de Filmes</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body style="background-color:#111; color:white; font-family: Arial, sans-serif;">
+        <h1 style="text-align:center;">Análise dos Melhores Filmes</h1>
+        <h2 style="text-align:center; margin-top:40px;">Top 3 Filmes Mais Bem Avaliados</h2>
+        <div style="display: flex; justify-content: center;">
+            
+        <div style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="https://image.tmdb.org/t/p/w500/xSnM4ahmz692msbMTBsfBWHvR3M.jpg" alt="Um Sonho de Liberdade" style="width:200px; height:auto;">
+            <h3 style="color:white;">Um Sonho de Liberdade (8.7)</h3>
+        </div>
+        
+        <div style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="https://image.tmdb.org/t/p/w500/kpZcRSrYYkowpiw2d6ZVdF1HWFc.jpg" alt="O Poderoso Chefão" style="width:200px; height:auto;">
+            <h3 style="color:white;">O Poderoso Chefão (8.689)</h3>
+        </div>
+        
+        <div style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="https://image.tmdb.org/t/p/w500/7g6wvsWHxBQujUcSXvZLhdFpDUy.jpg" alt="O Poderoso Chefão: Parte II" style="width:200px; height:auto;">
+            <h3 style="color:white;">O Poderoso Chefão: Parte II (8.6)</h3>
+        </div>
+        
+        </div>
+        <h2 style="text-align:center; margin-top:40px;">Quantidade de Filmes por Gênero</h2>
+        
+    <div style="display: flex; justify-content: center;">
+        <div>                            <div id="fecf92a2-e382-4abe-bc8a-073145d52e2c" class="plotly-graph-div" style="height:400px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("fecf92a2-e382-4abe-bc8a-073145d52e2c")) {                    Plotly.newPlot(                        "fecf92a2-e382-4abe-bc8a-073145d52e2c",                        [{"alignmentgroup":"True","hovertemplate":"G\u00eanero=%{x}\u003cbr\u003eQuantidade=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["Drama","Com\u00e9dia","Romance","Anima\u00e7\u00e3o","A\u00e7\u00e3o","Aventura","Thriller","Crime","Fantasia","Fam\u00edlia","Fic\u00e7\u00e3o cient\u00edfica","Hist\u00f3ria","Guerra","Mist\u00e9rio","M\u00fasica","Terror","Faroeste","Cinema TV"],"xaxis":"x","y":[278,73,72,72,64,63,57,56,52,40,38,38,35,28,15,7,5,4],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"G\u00eanero"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Quantidade"}},"legend":{"tracegroupgap":0},"title":{"text":"Quantidade de Filmes por G\u00eanero"},"barmode":"relative","margin":{"l":50,"r":50,"t":50,"b":50},"font":{"family":"Arial","size":14,"color":"white"},"width":800,"height":400},                        {"responsive": true}                    )                };                            </script>        </div>
+    </div>
+    
+        <h2 style="text-align:center; margin-top:40px;">Avaliação Média por Gênero</h2>
+        <div style="display: flex; justify-content: center;">
+            <div>                            <div id="ac0372da-5672-4779-b53d-ccd0c325e90a" class="plotly-graph-div" style="height:600px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ac0372da-5672-4779-b53d-ccd0c325e90a")) {                    Plotly.newPlot(                        "ac0372da-5672-4779-b53d-ccd0c325e90a",                        [{"alignmentgroup":"True","hovertemplate":"Avalia\u00e7\u00e3o M\u00e9dia=%{x}\u003cbr\u003eG\u00eanero=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"h","showlegend":false,"textposition":"auto","x":[8.187199999999999,8.171266666666664,8.169192307692308,8.160069444444446,8.155482142857142,8.145473684210526,8.139546875000002,8.129142857142858,8.128698412698414,8.125035971223026,8.123180555555557,8.118912280701757,8.113714285714284,8.109,8.105136986301373,8.103150000000001,8.099428571428572,8.074526315789475],"xaxis":"x","y":["Faroeste","M\u00fasica","Fantasia","Anima\u00e7\u00e3o","Crime","Fic\u00e7\u00e3o cient\u00edfica","A\u00e7\u00e3o","Terror","Aventura","Drama","Romance","Thriller","Mist\u00e9rio","Cinema TV","Com\u00e9dia","Fam\u00edlia","Guerra","Hist\u00f3ria"],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Avalia\u00e7\u00e3o M\u00e9dia"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"G\u00eanero"}},"legend":{"tracegroupgap":0},"title":{"text":"Avalia\u00e7\u00e3o M\u00e9dia por G\u00eanero"},"barmode":"relative","margin":{"l":100,"r":50,"t":50,"b":50},"font":{"family":"Arial","size":14,"color":"white"},"width":800,"height":600},                        {"responsive": true}                    )                };                            </script>        </div>
+        </div>
+        <h2 style="text-align:center; margin-top:40px;">Relação entre Orçamento e Avaliação Média</h2>
+        <div style="display: flex; justify-content: center;">
+            <div>                            <div id="4226f9b8-515b-43a3-bbc0-dcfcf3cdbebf" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4226f9b8-515b-43a3-bbc0-dcfcf3cdbebf")) {                    Plotly.newPlot(                        "4226f9b8-515b-43a3-bbc0-dcfcf3cdbebf",                        [{"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003eOr\u00e7amento (em milh\u00f5es)=%{x}\u003cbr\u003eAvalia\u00e7\u00e3o M\u00e9dia=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Guerra nas Estrelas","Forrest Gump: O Contador de Hist\u00f3rias","Beleza Americana","Cidad\u00e3o Kane","Metr\u00f3polis","Kill Bill: Volume 1","Apocalypse Now","Brilho Eterno de uma Mente sem Lembran\u00e7as","2001: Uma Odisseia no Espa\u00e7o","Menina de Ouro","A Outra Hist\u00f3ria Americana","Antes do Amanhecer","Amn\u00e9sia","Blade Runner: O Ca\u00e7ador de Andr\u00f3ides","Nausica\u00e4 do Vale do Vento","Indiana Jones e os Ca\u00e7adores da Arca Perdida","Gladiador","Jogos, Trapa\u00e7as e Dois Canos Fumegantes","O Profissional","Taxi Driver: Motorista de T\u00e1xi","De Volta para o Futuro","Scarface","O Senhor dos An\u00e9is: A Sociedade do Anel","O Senhor dos An\u00e9is: As Duas Torres","O Senhor dos An\u00e9is: O Retorno do Rei","Princesa Mononoke","A Viagem de Chihiro","Akira","Batman: O Cavaleiro das Trevas","Laranja Mec\u00e2nica","Cora\u00e7\u00e3o Valente","Sociedade dos Poetas Mortos","Intriga Internacional","O Gabinete do Dr. Caligari","O Poderoso Chef\u00e3o","Quanto Mais Quente Melhor","O Poderoso Chef\u00e3o: Parte II","O Sil\u00eancio dos Inocentes","Um Sonho de Liberdade","Amadeus","O Exterminador do Futuro 2: O Julgamento Final","Se Meu Apartamento Falasse","Casablanca","Roma, Cidade Aberta","Era Uma Vez na Am\u00e9rica","Jurassic Park: O Parque dos Dinossauros","Era uma Vez no Oeste","Os Sete Samurais","Alien: O Oitavo Passageiro","O Barco: Inferno no Mar","12 Homens e uma Senten\u00e7a","O \u00d3dio","O Pianista","A Lista de Schindler","Um Corpo Que Cai","Tr\u00eas Homens em Conflito","G\u00eanio Indom\u00e1vel","\u00c0 Espera de um Milagre","C\u00e3es de Aluguel","Um Estranho no Ninho","Disque M para Matar","Cassino","Psicose","Rashomon","Clube da Luta","Janela Indiscreta","A Vida dos Outros","O Sol \u00e9 Para Todos","Cidade de Deus","Crep\u00fasculo dos Deuses","Nascido Para Matar","Matrix","Trainspotting: Sem Limites","Os Suspeitos","A Vida \u00e9 Bela","Prenda-Me se For Capaz","R\u00e9quiem para um Sonho","Sindicato de Ladr\u00f5es","Paris, Texas","Central do Brasil","Oldboy","Harry Potter e o Prisioneiro de Azkaban","Aliens: O Resgate","Pulp Fiction: Tempo de Viol\u00eancia","O Iluminado","A Malvada","O Sexto Sentido","Os Bons Companheiros","...E o Vento Levou","Viagem \u00e0 Lua","Seven: Os Sete Crimes Capitais","Julgamento em Nuremberg","Amor \u00e0 Flor da Pele","O Resgate do Soldado Ryan","Toy Story: Um Mundo de Aventuras","Cantando na Chuva","Luzes da Cidade","O Grande Ditador","Dr. Fant\u00e1stico","Por uns D\u00f3lares a Mais","Lawrence da Ar\u00e1bia","Fogo Contra Fogo","A General","Em Busca do Ouro","Gl\u00f3ria Feita de Sangue","Pacto de Sangue","O Enigma de Outro Mundo","O Grande Truque","O Espelho","Stalker","Os Infiltrados","Touro Indom\u00e1vel","Festim Diab\u00f3lico","A Felicidade N\u00e3o Se Compra","Escritores da Liberdade","Guerra nas Estrelas: O Imp\u00e9rio Contra-Ataca","O Homem Elefante","Tempos Modernos","O Tesouro de Sierra Madre","Barry Lyndon","Orgulho e Preconceito","O Castelo Animado","Ladr\u00f5es de Bicicleta","Fugindo do Inferno","Onde os Fracos N\u00e3o T\u00eam Vez","Sangue Negro","Tropa de Elite","Como Estrelas na Terra","Meu Amigo Totoro","O Rei Le\u00e3o","Golpe de Mestre","Ghost in the Shell: O Fantasma do Futuro","Marcados Pelo Sangue","Dersu Uzala","O Garoto","Gritos e Sussurros","O Que Ter\u00e1 Acontecido a Baby Jane?","A Lenda do Pianista do Mar","O Gigante de Ferro","Lanternas Vermelhas","Perfect Blue","O Castelo no C\u00e9u","WALL-E","Adeus, Minha Concubina","O Carteiro e o Poeta","Amores Expressos","Cinema Paradiso","Ilha do Medo","Mem\u00f3rias de um Assassino","Ran","A Irmandade da Guerra","O Franco Atirador","Pink Floyd: The Wall","Harry Potter e as Rel\u00edquias da Morte - Parte 2","O T\u00famulo dos Vagalumes","C\u00e9u e Inferno","Gran Torino","Up: Altas Aventuras","Bastardos Ingl\u00f3rios","Dilwale vai levar a noiva","Os Sapatinhos Vermelhos","3 Idiotas","Filhos do Para\u00edso","O Segredo dos seus Olhos","Meu Nome \u00e9 Khan","A Origem","Sempre ao Seu Lado","O Circo","O Show de Truman: O Show da Vida","Testemunha de Acusa\u00e7\u00e3o","O Primeiro Amor","Inc\u00eandios","Hist\u00f3rias Cruzadas","Django Livre","12 Anos de Escravid\u00e3o","Intoc\u00e1veis","Em Sil\u00eancio","Michael Jackson: Thriller","A Ca\u00e7a","O Lobo de Wall Street","O Grande Hotel Budapeste","Quest\u00e3o de Tempo","Cenas de um Casamento","Os Suspeitos","O Conto da Princesa Kaguya","Clube de Compras Dallas","Interestelar","O Jogo da Imita\u00e7\u00e3o","Whiplash: Em Busca da Perfei\u00e7\u00e3o","O Quarto de Jack","Mommy","Evangelion: 3.0+1.0 A Esperan\u00e7a","A Criada","Como Eu Era Antes de Voc\u00ea","Vingadores: Ultimato","Vingadores: Guerra Infinita","Gato de Botas 2: O \u00daltimo Pedido","At\u00e9 o \u00daltimo Homem","Homem-Aranha: No Aranhaverso","Lion: Uma Jornada para Casa","Cruella","Com Amor, Van Gogh","Viva: A Vida \u00e9 uma Festa","Ford vs Ferrari","Tr\u00eas An\u00fancios Para Um Crime","Top Gun: Maverick","Estrelas Al\u00e9m do Tempo","Along with the Gods: The Two Worlds","Me Chame Pelo Seu Nome","Um La\u00e7o de Amor","Extraordin\u00e1rio","Um Contratempo","Kill Bill: O Inteiro Caso Sangrento","Bohemian Rhapsody","Motorista de T\u00e1xi","Wolfwalkers","Guardi\u00f5es da Gal\u00e1xia: Vol. 3","Com Amor, Simon","O \u00d3dio que Voc\u00ea Semeia","Ayla: A Filha da Guerra","Coringa","Green Book: O Guia","Parasita","My Hero Academia: O Filme - 2 Her\u00f3is","Soul","Jojo Rabbit","Cafarnaum","Along With the Gods: The Last 49 Days","Juntos para Sempre","Meu Amigo Enzo","A Cinco Passos de Voc\u00ea","1917","Retrato de uma Jovem em Chamas","No Manches Frida 2: Para\u00edso Destru\u00eddo","Pin\u00f3quio por Guillermo del Toro","Homem-Aranha: Atrav\u00e9s do Aranhaverso","Meu Pai","An\u00f4nimo","Minha M\u00e3e \u00e9 uma Pe\u00e7a 3: O Filme","Homem-Aranha: Sem Volta Para Casa","Demon Slayer: Mugen Train - O Filme","Milagre na Cela 7","Eu Contra Voc\u00ea: A Vingan\u00e7a do Sr. S","Som da Liberdade","Duna: Parte Dois","Transformers: O In\u00edcio","No Ritmo do Cora\u00e7\u00e3o","Liga da Justi\u00e7a de Zack Snyder","Meu Amigo Rob\u00f4","Garota do S\u00e9culo 20","Oppenheimer","A Sociedade da Neve","Ainda Temos o Amanh\u00e3","Radical","O Conde de Monte Cristo","Taylor Swift - The Eras Tour","Rob\u00f4 Selvagem"],"legendgroup":"","marker":{"color":"#636efa","symbol":"circle"},"mode":"markers","name":"","orientation":"v","showlegend":false,"x":[11.0,55.0,15.0,0.839727,5.3,30.0,31.5,20.0,12.0,30.0,20.0,2.5,9.0,28.0,1.0,18.0,103.0,1.35,16.0,1.9,19.0,25.0,93.0,79.0,94.0,23.5,19.0,5.7,185.0,2.2,72.0,16.4,4.0,0.018,6.0,2.883848,13.0,19.0,25.0,18.0,102.0,3.0,0.878,0.02,30.0,63.0,5.0,2.0,11.0,14.0,0.397751,2.6,35.0,22.0,2.479,1.2,10.0,60.0,1.2,3.0,1.4,50.0,0.806947,0.25,63.0,1.0,2.0,2.0,3.3,1.752,30.0,63.0,4.0,6.0,20.0,52.0,4.5,0.91,1.75,2.9,3.0,130.0,18.5,8.5,19.0,1.4,40.0,25.0,4.0,0.005985,33.0,3.0,0.15,70.0,30.0,2.5408,1.5,2.0,1.8,0.6,15.0,60.0,0.75,0.923,0.935,0.927262,15.0,40.0,0.82537,0.12,90.0,18.0,1.5,3.18,21.0,18.0,5.0,1.5,3.8,11.0,28.0,24.0,0.133,4.0,25.0,25.0,4.0,2.6,3.7,45.0,5.5,3.0,35.0,4.0,0.25,0.4,0.98,9.0,50.0,1.0,0.83,3.0,180.0,4.0,3.0,0.16,5.0,80.0,2.8,11.500005,1.5,15.0,12.0,125.0,3.7,0.25,33.0,175.0,70.0,13.2,0.5,9.0,0.18,2.0,12.0,160.0,16.0,9.0,60.0,3.0,14.0,6.8,25.0,100.0,20.0,13.0,2.2,1.1,3.8,100.0,30.0,12.0,0.15,46.0,49.3,5.0,165.0,14.0,3.3,13.0,4.9,29.7,8.575,20.0,356.0,300.0,90.0,40.0,90.0,12.0,200.0,5.5,175.0,97.6,15.0,170.0,25.0,18.3,3.5,7.0,20.0,4.0,55.0,52.0,12.820005,12.0,250.0,17.0,23.0,4.2,55.0,23.0,11.363,12.0,150.0,14.0,4.0,18.3,16.0,18.0,7.0,100.0,5.74,5.0,35.0,100.0,6.0,17.0,2.0,200.0,15.7,10.0,0.075,14.5,190.0,75.0,10.0,70.0,5.3,0.000119,100.0,65.5,9.0,10.0,46.7,15.0,78.0],"xaxis":"x","y":[8.204,8.471,8.015,8.0,8.119,8.0,8.3,8.1,8.1,8.0,8.343,8.0,8.2,7.9,7.9,7.9,8.2,8.1,8.306,8.141,8.317,8.164,8.415,8.4,8.5,8.3,8.538,7.9,8.516,8.2,7.942,8.3,8.0,7.925,8.689,8.1,8.6,8.3,8.7,8.0,8.12,8.198,8.2,8.012,8.419,7.951,8.3,8.462,8.2,8.087,8.5,8.094,8.38,8.6,8.165,8.463,8.157,8.507,8.1,8.416,8.018,8.0,8.429,8.1,8.4,8.352,8.0,7.997,8.4,8.3,8.128,8.2,8.0,8.181,8.449,8.0,8.018,7.9,8.1,8.1,8.258,8.0,7.9,8.488,8.2,8.096,8.0,8.457,7.94,7.921,8.4,8.1,8.1,8.216,8.0,8.2,8.3,8.305,8.115,8.015,8.0,7.917,7.961,7.986,8.269,8.1,8.065,8.2,8.0,8.2,8.162,7.929,7.946,8.3,7.918,8.4,8.034,8.29,7.958,8.0,8.1,8.4,8.2,7.9,7.9,8.076,8.0,7.993,8.068,8.257,8.0,7.9,8.14,8.0,8.173,7.94,7.9,8.264,7.95,7.946,8.3,7.975,8.094,8.0,7.9,7.993,8.4,8.203,8.062,8.1,7.997,7.997,7.967,8.093,8.456,8.332,7.992,7.959,8.218,8.5,7.954,7.999,7.9,7.997,8.0,8.369,8.007,8.0,8.1,8.212,8.024,8.107,8.2,8.2,7.9,8.277,8.156,8.185,8.1,8.033,8.0,7.919,8.1,8.099,8.096,7.928,8.4,7.998,8.4,8.021,8.238,8.2,8.218,7.93,8.247,8.2,8.2,8.196,8.4,8.1,8.008,7.999,8.209,8.006,8.1,8.2,8.058,8.1,8.1,8.0,8.1,8.113,8.0,8.0,8.076,8.2,7.966,8.0,8.1,8.1,8.1,8.241,8.5,7.921,8.124,8.019,8.159,8.124,8.1,8.2,8.2,7.991,8.1,7.954,8.084,8.354,8.122,7.951,8.2,8.0,8.213,8.262,8.1,8.003,8.2,8.1,7.936,8.141,8.1,8.2,8.1,8.021,8.148,8.371,8.205,8.319,8.4],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Or\u00e7amento (em milh\u00f5es)"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Avalia\u00e7\u00e3o M\u00e9dia"}},"legend":{"tracegroupgap":0},"title":{"text":"Rela\u00e7\u00e3o entre Or\u00e7amento e Avalia\u00e7\u00e3o M\u00e9dia"},"margin":{"l":50,"r":50,"t":50,"b":50}},                        {"responsive": true}                    )                };                            </script>        </div>
+        </div>
+        <h2 style="text-align:center; margin-top:40px;">Probabilidade de Lucro por Gênero</h2>
+        <div style="display: flex; justify-content: center;">
+            <div>                            <div id="c554d1ec-8b8f-4318-9154-ebcc4ac72b8e" class="plotly-graph-div" style="height:500px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("c554d1ec-8b8f-4318-9154-ebcc4ac72b8e")) {                    Plotly.newPlot(                        "c554d1ec-8b8f-4318-9154-ebcc4ac72b8e",                        [{"alignmentgroup":"True","hovertemplate":"G\u00eanero=%{x}\u003cbr\u003eProbabilidade de Lucro (%)=%{y}\u003cbr\u003eTotal de Filmes=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"text":[5.0,43.0,44.0,35.0,43.0,45.0,167.0,32.0,30.0,18.0,27.0,26.0,8.0,23.0,21.0,5.0,29.0],"textposition":"outside","x":["Faroeste","A\u00e7\u00e3o","Aventura","Com\u00e9dia","Thriller","Crime","Drama","Fic\u00e7\u00e3o cient\u00edfica","Romance","Mist\u00e9rio","Hist\u00f3ria","Guerra","M\u00fasica","Fantasia","Fam\u00edlia","Terror","Anima\u00e7\u00e3o"],"xaxis":"x","y":[100.0,97.67441860465115,95.45454545454545,94.28571428571428,93.02325581395348,91.11111111111111,91.01796407185628,90.625,90.0,88.88888888888889,88.88888888888889,88.46153846153845,87.5,86.95652173913044,85.71428571428571,80.0,75.86206896551724],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"G\u00eanero"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Probabilidade de Lucro (%)"},"ticksuffix":"%"},"legend":{"tracegroupgap":0},"title":{"text":"Probabilidade de Lucro por G\u00eanero (em %)"},"barmode":"relative","margin":{"l":50,"r":50,"t":50,"b":50},"font":{"family":"Arial","size":14,"color":"white"},"width":800,"height":500},                        {"responsive": true}                    )                };                            </script>        </div>
+        </div>
+        <h2 style="text-align:center; margin-top:40px;">Filmes Mais Bem Avaliados por Gênero</h2>
+        <h3 style="text-align:center; margin-top:40px;">Fantasia</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg" alt="A Viagem de Chihiro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Viagem de Chihiro (8.538)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/14hEqW67IiHlKpzKMLUXyktzZIV.jpg" alt="À Espera de um Milagre" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">À Espera de um Milagre (8.507)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/aXS3D94iIO9dheHrG0BhgUR4Wuy.jpg" alt="O Senhor dos Anéis: O Retorno do Rei" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: O Retorno do Rei (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg" alt="O Senhor dos Anéis: A Sociedade do Anel" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: A Sociedade do Anel (8.415)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cmTFY35KK40yBX23Z9HhqU5uZ2O.jpg" alt="O Senhor dos Anéis: As Duas Torres" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: As Duas Torres (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg" alt="O Castelo Animado" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Castelo Animado (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/imcOp1kJsCsAFCoOtY5OnPrFbAf.jpg" alt="O Auto da Compadecida" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Auto da Compadecida (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/vmlg5d0oF2Ehe19Cz83oEMKhM6e.jpg" alt="A Lenda de Hei" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lenda de Hei (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zYbv3diKdEuxQrgRisbhQN6WhRr.jpg" alt="Era uma vez um Estúdio" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Era uma vez um Estúdio (8.32)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7ZTL7uAfqGygKM2gJGYm36y46NU.jpg" alt="Para a Floresta da Luz dos Vagalumes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Para a Floresta da Luz dos Vagalumes (8.303)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Mistério</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/oC2iYT2on8c2iZnehah1l6AWqGu.jpg" alt="Psicose" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Psicose (8.429)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cNFCNa5jUYmFmSpCg7dJ3jWd22d.jpg" alt="Seven: Os Sete Crimes Capitais" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Seven: Os Sete Crimes Capitais (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/jI2eOA4HQwD77yRv075I3G0ahJL.jpg" alt="Janela Indiscreta" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Janela Indiscreta (8.352)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/iRvFiy9JpNMQp9PUG2qvN0jfcdG.jpg" alt="Céu e Inferno" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Céu e Inferno (8.332)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/KGyCMfEfvUKavzyq6iTc2DBUKM.jpg" alt="Oldboy" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Oldboy (8.258)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/x19FjKz45i3Fwlj6wGZUBHUAR1y.jpg" alt="Testemunha de Acusação" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Testemunha de Acusação (8.212)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/erl801HYIodoIBGZeFk0GTwCUBh.jpg" alt="Ilha do Medo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Ilha do Medo (8.203)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/74SYaTyGMEYvjk0UtdhANlWiSkn.jpg" alt="Amnésia" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Amnésia (8.2)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/9yOIPXWQ9ttsZfzHvmcS7XiV8To.jpg" alt="O Grande Truque" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Grande Truque (8.2)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dYHGoPMkZMVuBA4EydmDQMo1EEv.jpg" alt="Michael Jackson: Thriller" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Michael Jackson: Thriller (8.185)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Crime</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/xSnM4ahmz692msbMTBsfBWHvR3M.jpg" alt="Um Sonho de Liberdade" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Um Sonho de Liberdade (8.7)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kpZcRSrYYkowpiw2d6ZVdF1HWFc.jpg" alt="O Poderoso Chefão" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Poderoso Chefão (8.689)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7g6wvsWHxBQujUcSXvZLhdFpDUy.jpg" alt="O Poderoso Chefão: Parte II" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Poderoso Chefão: Parte II (8.6)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg" alt="Batman: O Cavaleiro das Trevas" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Batman: O Cavaleiro das Trevas (8.516)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/14hEqW67IiHlKpzKMLUXyktzZIV.jpg" alt="À Espera de um Milagre" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">À Espera de um Milagre (8.507)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg" alt="Pulp Fiction: Tempo de Violência" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Pulp Fiction: Tempo de Violência (8.488)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/lanYBnyCcqkaFqz66B8PrBRCtCW.jpg" alt="Os Bons Companheiros" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Os Bons Companheiros (8.457)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/8E2lZjt28MR6Dzc3QOiVzM8PvXU.jpg" alt="Era Uma Vez na América" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Era Uma Vez na América (8.419)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg" alt="Cidade de Deus" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Cidade de Deus (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cNFCNa5jUYmFmSpCg7dJ3jWd22d.jpg" alt="Seven: Os Sete Crimes Capitais" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Seven: Os Sete Crimes Capitais (8.4)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Romance</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg" alt="Dilwale vai levar a noiva" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Dilwale vai levar a noiva (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bMOKAjTU1TNUjRSF7icldbii06u.jpg" alt="Your Name." style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Your Name. (8.484)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bfeIonJ9AGC0kkNK0d69oIyqZMs.jpg" alt="Forrest Gump: O Contador de Histórias" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Forrest Gump: O Contador de Histórias (8.471)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kkmwHNAiCea2QGX6kgPmdDKaWyp.jpg" alt="Cinema Paradiso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Cinema Paradiso (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7byisQANRFHf9SC60n5PaLywuMa.jpg" alt="Colegas de Classe" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Colegas de Classe (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/4qbYAHZkxfye1TI6HsQ8I6G3iiJ.jpg" alt="O Inferno de Gabriel" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Inferno de Gabriel (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg" alt="O Inferno de Gabriel - Parte 2" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Inferno de Gabriel - Parte 2 (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7Lu59Kxb7ndGI7CA942FeNOlLfB.jpg" alt="O Inferno de Gabriel - Parte 3" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Inferno de Gabriel - Parte 3 (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7ZTL7uAfqGygKM2gJGYm36y46NU.jpg" alt="Para a Floresta da Luz dos Vagalumes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Para a Floresta da Luz dos Vagalumes (8.303)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/s0T1MpsDcQCmqOTJ47zASE1PevI.jpg" alt="Luzes da Cidade" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Luzes da Cidade (8.3)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Ficção científica</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg" alt="Guerra nas Estrelas: O Império Contra-Ataca" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Guerra nas Estrelas: O Império Contra-Ataca (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="Interestelar" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Interestelar (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/ejqquyk7r3GLXPir62rksUmPKj5.jpg" alt="Homem-Aranha: No Aranhaverso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Homem-Aranha: No Aranhaverso (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg" alt="Robô Selvagem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Robô Selvagem (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg" alt="A Origem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Origem (8.369)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/fUwfsPWEEdnSt29jIwJ5eVtySX6.jpg" alt="Homem-Aranha: Através do Aranhaverso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Homem-Aranha: Através do Aranhaverso (8.354)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/egrTG3M5KhO5E6nfgGLtUYeuERn.jpg" alt="De Volta para o Futuro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">De Volta para o Futuro (8.317)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/txDIbdn7p6eYdFMVoHbd4wwrNkM.jpg" alt="Neon Genesis Evangelion: O Fim do Evangelho" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Neon Genesis Evangelion: O Fim do Evangelho (8.301)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7jvlqGsxeMKscskuUZgKk0Kuv99.jpg" alt="Vingadores: Ultimato" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Vingadores: Ultimato (8.247)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/okZMETLdhZypwJfzwjeWIzkIBaK.jpg" alt="Liga da Justiça Sombria: Guerra de Apokolips" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Liga da Justiça Sombria: Guerra de Apokolips (8.217)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Comédia</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg" alt="Dilwale vai levar a noiva" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Dilwale vai levar a noiva (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bik2BZjmVjeE6LOZqtuTjb4jJPQ.jpg" alt="Parasita" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Parasita (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bfeIonJ9AGC0kkNK0d69oIyqZMs.jpg" alt="Forrest Gump: O Contador de Histórias" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Forrest Gump: O Contador de Histórias (8.471)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/mdqU2CHabmbdkWKs1IvCfksbtNM.jpg" alt="A Vida é Bela" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Vida é Bela (8.449)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/imcOp1kJsCsAFCoOtY5OnPrFbAf.jpg" alt="O Auto da Compadecida" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Auto da Compadecida (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zYbv3diKdEuxQrgRisbhQN6WhRr.jpg" alt="Era uma vez um Estúdio" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Era uma vez um Estúdio (8.32)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/egrTG3M5KhO5E6nfgGLtUYeuERn.jpg" alt="De Volta para o Futuro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">De Volta para o Futuro (8.317)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/Mjc994AW1r5hcXAh0PFjTdd7iY.jpg" alt="O Grande Ditador" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Grande Ditador (8.305)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/s0T1MpsDcQCmqOTJ47zASE1PevI.jpg" alt="Luzes da Cidade" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Luzes da Cidade (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/skGhz4SJrVzegKy4Xo7kVh8mpus.jpg" alt="Nós Que Nos Amávamos Tanto" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Nós Que Nos Amávamos Tanto (8.3)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Animação</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg" alt="A Viagem de Chihiro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Viagem de Chihiro (8.538)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bMOKAjTU1TNUjRSF7icldbii06u.jpg" alt="Your Name." style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Your Name. (8.484)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg" alt="O Túmulo dos Vagalumes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Túmulo dos Vagalumes (8.456)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg" alt="O Castelo Animado" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Castelo Animado (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/ejqquyk7r3GLXPir62rksUmPKj5.jpg" alt="Homem-Aranha: No Aranhaverso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Homem-Aranha: No Aranhaverso (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7byisQANRFHf9SC60n5PaLywuMa.jpg" alt="Colegas de Classe" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Colegas de Classe (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/vmlg5d0oF2Ehe19Cz83oEMKhM6e.jpg" alt="A Lenda de Hei" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lenda de Hei (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg" alt="Robô Selvagem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Robô Selvagem (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/9NBBkdxH0TjQEBSN2AzeE1sgsF9.jpg" alt="Primal: Tales of Savagery" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Primal: Tales of Savagery (8.391)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg" alt="A Voz do Silêncio" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Voz do Silêncio (8.383)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Drama</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/xSnM4ahmz692msbMTBsfBWHvR3M.jpg" alt="Um Sonho de Liberdade" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Um Sonho de Liberdade (8.7)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kpZcRSrYYkowpiw2d6ZVdF1HWFc.jpg" alt="O Poderoso Chefão" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Poderoso Chefão (8.689)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7g6wvsWHxBQujUcSXvZLhdFpDUy.jpg" alt="O Poderoso Chefão: Parte II" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Poderoso Chefão: Parte II (8.6)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bGhhNzJYDsuLruNN5bJ2PvLcMiq.jpg" alt="A Lista de Schindler" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lista de Schindler (8.6)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg" alt="Batman: O Cavaleiro das Trevas" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Batman: O Cavaleiro das Trevas (8.516)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/14hEqW67IiHlKpzKMLUXyktzZIV.jpg" alt="À Espera de um Milagre" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">À Espera de um Milagre (8.507)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/q8RGf4SbVCObCySZ4PIGsn5wFm6.jpg" alt="12 Homens e uma Sentença" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">12 Homens e uma Sentença (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg" alt="Dilwale vai levar a noiva" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Dilwale vai levar a noiva (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bik2BZjmVjeE6LOZqtuTjb4jJPQ.jpg" alt="Parasita" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Parasita (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bMOKAjTU1TNUjRSF7icldbii06u.jpg" alt="Your Name." style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Your Name. (8.484)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Ação</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg" alt="A Viagem de Chihiro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Viagem de Chihiro (8.538)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg" alt="Batman: O Cavaleiro das Trevas" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Batman: O Cavaleiro das Trevas (8.516)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/aXS3D94iIO9dheHrG0BhgUR4Wuy.jpg" alt="O Senhor dos Anéis: O Retorno do Rei" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: O Retorno do Rei (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bMOKAjTU1TNUjRSF7icldbii06u.jpg" alt="Your Name." style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Your Name. (8.484)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/telXEMxGtJvffm5JDsx1rQzwWlf.jpg" alt="Os Sete Samurais" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Os Sete Samurais (8.462)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg" alt="O Túmulo dos Vagalumes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Túmulo dos Vagalumes (8.456)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg" alt="O Senhor dos Anéis: A Sociedade do Anel" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: A Sociedade do Anel (8.415)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cmTFY35KK40yBX23Z9HhqU5uZ2O.jpg" alt="O Senhor dos Anéis: As Duas Torres" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: As Duas Torres (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg" alt="Guerra nas Estrelas: O Império Contra-Ataca" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Guerra nas Estrelas: O Império Contra-Ataca (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg" alt="O Castelo Animado" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Castelo Animado (8.4)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Thriller</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg" alt="Batman: O Cavaleiro das Trevas" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Batman: O Cavaleiro das Trevas (8.516)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bik2BZjmVjeE6LOZqtuTjb4jJPQ.jpg" alt="Parasita" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Parasita (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg" alt="Pulp Fiction: Tempo de Violência" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Pulp Fiction: Tempo de Violência (8.488)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/oC2iYT2on8c2iZnehah1l6AWqGu.jpg" alt="Psicose" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Psicose (8.429)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cNFCNa5jUYmFmSpCg7dJ3jWd22d.jpg" alt="Seven: Os Sete Crimes Capitais" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Seven: Os Sete Crimes Capitais (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/jI2eOA4HQwD77yRv075I3G0ahJL.jpg" alt="Janela Indiscreta" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Janela Indiscreta (8.352)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/paGUSTwcFrAxpGV1hSQ2wsI28id.jpg" alt="O Silêncio dos Inocentes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Silêncio dos Inocentes (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/79vujbsWEbX4dzffBV541QXN6sf.jpg" alt="Perfect Blue" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Perfect Blue (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/aPbc8vnGvaiFpnIbJdbWNH8ttpF.jpg" alt="A Um Passo da Liberdade" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Um Passo da Liberdade (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/KGyCMfEfvUKavzyq6iTc2DBUKM.jpg" alt="Oldboy" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Oldboy (8.258)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Guerra</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bGhhNzJYDsuLruNN5bJ2PvLcMiq.jpg" alt="A Lista de Schindler" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lista de Schindler (8.6)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg" alt="O Túmulo dos Vagalumes" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Túmulo dos Vagalumes (8.456)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zgtCY3VshbIv3UfNkdvVEShGmlE.jpg" alt="O Pianista" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Pianista (8.38)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/Mjc994AW1r5hcXAh0PFjTdd7iY.jpg" alt="O Grande Ditador" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Grande Ditador (8.305)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/awYf0r6iuTXDAYQEGLdsvzz3Sa5.jpg" alt="Apocalypse Now" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Apocalypse Now (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zCS3VCjknFT5boanlaFGH8wqpnJ.jpg" alt="Glória Feita de Sangue" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Glória Feita de Sangue (8.269)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/tcXEexk4k4PGo6VbUOOXl5W2wlP.jpg" alt="Vá e Veja" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Vá e Veja (8.255)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/n8fuS2uDDykO4P3RBPKLhWs0Ffj.jpg" alt="Bastardos Inglórios" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Bastardos Inglórios (8.218)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/9SykLweWJJ5ISoT52s4Pfmul9DM.jpg" alt="O Resgate do Soldado Ryan" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Resgate do Soldado Ryan (8.216)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/88sCL8OQMoieKpHClqRCCbcgH6w.jpg" alt="Até o Último Homem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Até o Último Homem (8.196)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">História</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bGhhNzJYDsuLruNN5bJ2PvLcMiq.jpg" alt="A Lista de Schindler" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lista de Schindler (8.6)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/juRMHEWUbk2kM9RdxjjcVjj7T1a.jpg" alt="Harakiri" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Harakiri (8.395)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zCS3VCjknFT5boanlaFGH8wqpnJ.jpg" alt="Glória Feita de Sangue" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Glória Feita de Sangue (8.269)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/u9dldwRwQjTZGlIxKaAtAPLAjOv.jpg" alt="Green Book: O Guia" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Green Book: O Guia (8.241)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/9SykLweWJJ5ISoT52s4Pfmul9DM.jpg" alt="O Resgate do Soldado Ryan" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Resgate do Soldado Ryan (8.216)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/r9z0A9pcmakSaixhr5Ki69TmXWu.jpg" alt="O Conde de Monte Cristo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Conde de Monte Cristo (8.205)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/88sCL8OQMoieKpHClqRCCbcgH6w.jpg" alt="Até o Último Homem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Até o Último Homem (8.196)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/h1B7tW0t399VDjAcWJh8m87469b.jpg" alt="Hamilton" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Hamilton (8.18)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/3ollXGoWPfbZZrNCLH6Y7o3ufoU.jpg" alt="Julgamento em Nuremberg" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Julgamento em Nuremberg (8.1)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/gWw6iyVEoWtYLRNeyS9nv6sgXlx.jpg" alt="Ran" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Ran (8.1)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Faroeste</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bHwIzQrbJKiFwArLLngS1Ej6xPc.jpg" alt="Três Homens em Conflito" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Três Homens em Conflito (8.463)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/sBcaRQEZInpiQNSKKW5wjcEtXUS.jpg" alt="Era uma Vez no Oeste" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Era uma Vez no Oeste (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/ar63Sx8jeqk0OOu2uchS477S2zE.jpg" alt="Django Livre" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Django Livre (8.2)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/6hunykeSZ1fn6oPSUP1PyCQVu9G.jpg" alt="Por uns Dólares a Mais" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Por uns Dólares a Mais (8.015)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/jJtN1SKgAxcPO6ssGadj8zq808G.jpg" alt="O Tesouro de Sierra Madre" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Tesouro de Sierra Madre (7.958)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Família</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg" alt="A Viagem de Chihiro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Viagem de Chihiro (8.538)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/eaf7GQj0ieOwm08rrvjJQNbN0kN.jpg" alt="Cosas Imposibles" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Cosas Imposibles (8.436)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg" alt="Robô Selvagem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Robô Selvagem (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/zYbv3diKdEuxQrgRisbhQN6WhRr.jpg" alt="Era uma vez um Estúdio" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Era uma vez um Estúdio (8.32)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/8E4xWKGLSkozFg87JBXN8Fi7eE7.jpg" alt="A Felicidade Não Se Compra" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Felicidade Não Se Compra (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/765XUik0cbyWHITgE22FhpA8elG.jpg" alt="O Menino, a Toupeira, a Raposa e o Cavalo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Menino, a Toupeira, a Raposa e o Cavalo (8.272)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg" alt="O Rei Leão" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Rei Leão (8.257)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/mqeHZZ5IakUABFtJwTSw6bM0CND.jpg" alt="Crianças Lobo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Crianças Lobo (8.227)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/sdl31AfqivY0tryVfo9GMcAUx05.jpg" alt="Viva: A Vida é uma Festa" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Viva: A Vida é uma Festa (8.209)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/x4wFOIynyCT06XrlPOhM2vHpz28.jpg" alt="Gato de Botas 2: O Último Pedido" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Gato de Botas 2: O Último Pedido (8.2)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Cinema TV</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/xSmtEs771Czn1cU3PwgYqDuwCgA.jpg" alt="Steven Universo: O Filme" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Steven Universo: O Filme (8.158)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/qMry2MoNP9EPDRoeuYyaB8Tw7ES.jpg" alt="Orações para Bobby" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Orações para Bobby (8.1)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/eHAfw4FcU6i1X8jrr8cQZtyLsmg.jpg" alt="Miraculous World: Nova Iorque, Heróis Unidos" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Miraculous World: Nova Iorque, Heróis Unidos (8.1)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/uvHhYA3dpSX13KB0rtr1awgHT1r.jpg" alt="Acredite em Mim: A História de Lisa Mcvey" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Acredite em Mim: A História de Lisa Mcvey (8.078)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Música</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dtnzzmGOy2Ni89Ir4I1FTO40FJQ.jpg" alt="Whiplash: Em Busca da Perfeição" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Whiplash: Em Busca da Perfeição (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/jf3YO8hOqGHCupsREf5qymYq1n.jpg" alt="Taylor Swift - The Eras Tour" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Taylor Swift - The Eras Tour (8.319)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/u6oXUTtOuJRPdUgUuPAVVJPSKCo.jpg" alt="Taylor Swift: Reputation Stadium Tour" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Taylor Swift: Reputation Stadium Tour (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/euWiWsHhPeSGFsIO5ArzCkGeskG.jpg" alt="Clouds" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Clouds (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1bVbQatuLoj8IS0tOtUu7PlQ5kI.jpg" alt="Given: O Filme" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Given: O Filme (8.3)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1nAzfbocwtEyvuFVIAycU3xeDrQ.jpg" alt="A Lenda do Pianista do Mar" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Lenda do Pianista do Mar (8.264)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/xg6QZdlHrq2dtSK8cfnQQMnmpeY.jpg" alt="Como caído del cielo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Como caído del cielo (8.212)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/sdl31AfqivY0tryVfo9GMcAUx05.jpg" alt="Viva: A Vida é uma Festa" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Viva: A Vida é uma Festa (8.209)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dYHGoPMkZMVuBA4EydmDQMo1EEv.jpg" alt="Michael Jackson: Thriller" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Michael Jackson: Thriller (8.185)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/xSmtEs771Czn1cU3PwgYqDuwCgA.jpg" alt="Steven Universo: O Filme" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Steven Universo: O Filme (8.158)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Terror</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/oC2iYT2on8c2iZnehah1l6AWqGu.jpg" alt="Psicose" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Psicose (8.429)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/uJKE37tX7lDXV1voYKd2fQDR4lE.jpg" alt="Alien: O Oitavo Passageiro" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Alien: O Oitavo Passageiro (8.2)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/7ceEaLciLfksJkSHqp0vLE5eLyy.jpg" alt="O Iluminado" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Iluminado (8.2)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dYHGoPMkZMVuBA4EydmDQMo1EEv.jpg" alt="Michael Jackson: Thriller" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Michael Jackson: Thriller (8.185)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg" alt="O Enigma de Outro Mundo" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Enigma de Outro Mundo (8.065)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/j09TT0S1crBSYjPu14vgzSSFqFo.jpg" alt="O Gabinete do Dr. Caligari" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Gabinete do Dr. Caligari (7.925)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cUmqJtXESwRNTUU9s1Xtu6PJSUH.jpg" alt="O Que Terá Acontecido a Baby Jane?" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Que Terá Acontecido a Baby Jane? (7.9)</p>
+            </div>
+            </div><h3 style="text-align:center; margin-top:40px;">Aventura</h3><div style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/aXS3D94iIO9dheHrG0BhgUR4Wuy.jpg" alt="O Senhor dos Anéis: O Retorno do Rei" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: O Retorno do Rei (8.5)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/omoMXT3Z7XrQwRZ2OGJGNWbdeEl.jpg" alt="O Senhor dos Anéis: A Sociedade do Anel" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: A Sociedade do Anel (8.415)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/cmTFY35KK40yBX23Z9HhqU5uZ2O.jpg" alt="O Senhor dos Anéis: As Duas Torres" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Senhor dos Anéis: As Duas Torres (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg" alt="Guerra nas Estrelas: O Império Contra-Ataca" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Guerra nas Estrelas: O Império Contra-Ataca (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg" alt="O Castelo Animado" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">O Castelo Animado (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="Interestelar" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Interestelar (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/ejqquyk7r3GLXPir62rksUmPKj5.jpg" alt="Homem-Aranha: No Aranhaverso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Homem-Aranha: No Aranhaverso (8.4)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/9NBBkdxH0TjQEBSN2AzeE1sgsF9.jpg" alt="Primal: Tales of Savagery" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Primal: Tales of Savagery (8.391)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg" alt="A Origem" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">A Origem (8.369)</p>
+            </div>
+            
+            <div style="margin: 10px; text-align: center; width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w500/fUwfsPWEEdnSt29jIwJ5eVtySX6.jpg" alt="Homem-Aranha: Através do Aranhaverso" style="width:100%; height:auto;">
+                <p style="color:white; font-size:14px;">Homem-Aranha: Através do Aranhaverso (8.354)</p>
+            </div>
+            </div>
+    </body>
+    </html>
+    
